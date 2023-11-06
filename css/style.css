@@ -247,6 +247,11 @@ h2{
     margin-bottom: 2rem;
     text-align: justify;
 }
+.more-info{
+    color: #ff5722;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 @media screen and (min-width:1024px) {
     .feature{
         grid-template-columns: repeat(2,1fr);
@@ -309,11 +314,12 @@ h2{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    cursor: pointer;
 }
 .contact-us__icons{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .contact-us__icons .icon-holder{
     display: inherit;
@@ -325,6 +331,7 @@ h2{
     display: block;
     max-width: 200px;
     direction: ltr;
+    margin-right: 1rem;
 }
  .location{
     direction: rtl;
@@ -374,6 +381,7 @@ margin-bottom: 2.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 1rem;
+    box-shadow: 3px 3px 5px 0px rgba(229,229,229);
 }
 .form-wrapper h3{
 margin: 2.2rem 0;
@@ -438,6 +446,9 @@ text-align: center;
     color: #fff;
     margin-bottom: .5rem;
     display: block;
+}
+.footer__item a:hover{
+    color: var(--color-primary);
 }
 .footer__item h6{
     font-size: 1.8rem;
@@ -624,6 +635,7 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 }
 .intro-btn__passenger.second{
 background-color: initial;
@@ -712,6 +724,7 @@ margin-bottom: 0;
 .service__tabs .tab{
     opacity: .5;
     cursor: pointer;
+    transition: all 0.5s ease-in;
 }
 .service__tabs .tab:hover{
     opacity: 1;
